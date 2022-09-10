@@ -1,9 +1,11 @@
+@use 'variaveis';
+
 .header {
     background-image: url(../src/img/fundo-header.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 75vh;
-    font-family: Arial, Helvetica, sans-serif;
+    height: 76vh;
+    font-family: variaveis.$font;
 
     .header__nav {
         display: flex;
@@ -63,7 +65,8 @@
         height: 400px;
 
         .header__section__titulo{
-            font-size: 4rem;
+            text-align: center;
+            font-size: 3.7rem;
             color: #fff;
             font-weight: bolder;
             
@@ -105,9 +108,234 @@
         }
         
         .header__section__link {
+            font-weight: 300;
             color: #fff;
             width: 300px;
             text-align: center;
         }
     }
+}
+
+//Começando a estilazar o main 
+.main {
+    margin-top: 140px;
+    width: 100%;
+
+    .main__secao1 {
+        height: 400px;
+
+        .main__secao1__div {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            height: 360px;
+            width: 80%;
+            margin: 0 auto;
+
+
+            //Estilzando os ul
+            .main__secao1__div__ul {
+                width: 23%;
+                font-family: variaveis.$font;
+                color: #2b2929;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                text-align: center;
+                height: 80%;
+                
+
+                .main__secao1__div__ul__li__img {
+                    width: 55%;
+                }
+
+                .main__secao1__div__ul__li__titulo {
+                    font-size: 30px;
+                    font-weight: bold;
+                }
+
+                .main__secao1__div__ul__li__parag {
+                    margin-top: 10px;
+                    font-weight: 530;
+                    font-size: 18px;
+                    height: 80px;
+                    line-height: 25px;
+                    
+                }
+
+                .main__secao1__div__ul__li__link {
+                    display: flex;
+                    justify-content: center;
+                    text-decoration: none;
+                    color: #eb1700;
+                    font-size: 18px;
+                    font-weight: bold;
+
+                    .main__secao1__div__ul__li__link__seta{
+                        text-align: center;
+                        margin: auto 5px;
+                        font-size: 10px;
+                    }
+                }
+
+            }
+            //Fim dos ul
+
+            //Colocando estilo no li separadamente.
+            .ul2 {
+                height: 350px;
+                margin-top: -15px;
+                 
+                .ul2__titulo {
+                    font-size: 32px;
+                    margin: 0 auto;
+                    text-align: center;
+                    width: 200px;
+                    
+                }
+            }
+
+            .ul3__titulo {
+                margin-top: -20px;
+            }
+            //Fim das classes exculisivas do ul
+        }
+    }
+    
+    .main__secao2{
+        height: 500px;
+        margin-top: 40px;
+
+        .main__secao2__containerPrincipal {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            height: 550px;
+            width: 80%;
+            margin: 0 auto;
+            
+
+            .main__secao2__containerPrincipal__container1 {
+                width: 45%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                .main__secao2__containerPrincipal__container1__titulo {
+                    text-align: left;
+                    font-weight: bolder;
+                    font-family: variaveis.$font;
+                    font-size: 40px;
+                    color: #2b2929;
+                    width: 54%;
+                    line-height: 45px;
+                    margin-bottom: 10px;
+                }
+
+                .main__secao2__containerPrincipal__container1__parag {
+                    text-align: left;
+                    font-weight: bold;
+                    font-family: variaveis.$font;   
+                    line-height: 25px;
+                    font-size: 18px;
+                }
+
+                .main__secao2__containerPrincipal__container1__button {
+                    width: 120px;
+                    border: none;
+                    border-radius: 20px;
+                    background-color: #eb1700;
+                    color: #fff;
+                    font-weight: bold;
+                    height: 40px;
+                    font-size: 15px;
+                    margin-top: 10px;
+                }
+
+                .main__secao2__containerPrincipal__container1__button:hover {
+                    transition: 0.8s;
+                    background-color: #a21101;
+                    cursor: pointer;
+                }
+            }
+
+            .main__secao2__containerPrincipal__container2 {
+                margin: auto 0;
+                .main__secao2__containerPrincipal__container1__img {
+                    width: 700px;
+                }
+            }
+        }
+    }
+
+    .main__secao3 {
+        background-color: #fff0ed;
+        height: 700px;
+        .main__secao3__containerPrincipal{
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            height: 100%;
+            width: 80%;
+            margin: 0 auto;
+            
+            .main__secao3__containerPrincipal__container1 {
+                width: 60%;
+                padding-top: 100px ;
+
+                .main__secao3__containerPrincipal__container1__img {
+                    width: 100%;
+                    
+                }
+            }
+
+            .main__secao3__containerPrincipal__container2 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: left;
+                
+
+                .main__secao3__containerPrincipal__container2__titulo {
+                    text-align: right;
+                    font-weight: bolder;
+                    font-family: variaveis.$font;
+                    font-size: 40px;
+                    color: #2b2929;
+                    margin-bottom: 15px;
+                }
+
+                .main__secao3__containerPrincipal__container2__parag {
+                    text-align: left;
+                    font-weight: bold;
+                    font-family: variaveis.$font;   
+                    line-height: 25px;
+                    font-size: 18px;
+                }
+
+                .main__secao3__containerPrincipal__container2__button {
+                    width: 150px;
+                    border: none;
+                    border-radius: 20px;
+                    background-color: #eb1700;
+                    color: #fff;
+                    font-weight: bold;
+                    height: 40px;
+                    font-size: 15px;
+                    margin-top: 10px;
+                    
+                }
+
+                .main__secao3__containerPrincipal__container2__button:hover {
+                    transition: 0.8s;
+                    background-color: #a21101;
+                    cursor: pointer;
+                }
+            }
+            
+        }
+        
+    }
+
+    
 }
