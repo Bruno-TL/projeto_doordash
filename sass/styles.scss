@@ -339,3 +339,111 @@
 
     
 }
+
+.rodape {
+    background-color: #191919;
+    height: 370px;
+    font-family: variaveis.$font;;
+    
+    .rodape__section {
+        display: flex;
+        width: 75%;
+        margin: 0 auto;
+        justify-content: space-evenly;
+        height: 300px;
+
+        .rodape__section__container {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            
+
+            .rodape__section__container__titulo {
+                color: #fff;
+                font-weight: 500;
+                margin-bottom: 20px;
+            }
+
+            .rodape__section__container__link {
+                text-decoration: none; 
+                color: #b7b7b7;
+                line-height: 25px;
+            }
+
+            .rodape__section__container__link:hover {
+                text-decoration: underline; 
+                color: #fff;
+                
+            }
+
+            .rodape__section__container__imgAPP {
+                margin-bottom: 20px;
+                width: 70%;
+                filter: opacity(.7);
+            }
+
+            .rodape__section__container__imgGoogle {
+                margin-bottom: 20px;
+                width: 70%;
+                filter: opacity(.7);
+            }
+
+            .rodape__section__container__imgAPP:hover {
+                filter: opacity(5);
+            }
+
+            .rodape__section__container__imgGoogle:hover {
+                filter: opacity(5);
+            }
+        }
+    }
+
+    .rodape__section2 {
+        height: 50px; 
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin: 0 auto;
+        align-items: center;
+
+         .rodape__section2__container {
+            
+            display: flex;
+            align-items: center;
+            
+
+            .rodape__section2__container__img {
+                width: 35px;
+                margin-right: 20px;
+            }
+
+            .rodape__section2__container__link {
+                text-decoration: none;
+                color: #ccc;
+                font-size: 13px;
+                margin-right: 20px;
+            }
+
+            .rodape__section2__container__link:hover {
+                text-decoration: underline;
+                color: #fff;
+            }
+
+            .rodape__section2__container__parag {
+                color: #ccc;
+                font-size: 13px;
+                margin-right: 20px;
+            }
+
+            .rodape__section2__container__img2 {
+                filter: opacity(.7);
+            }
+
+            .rodape__section2__container__img2:hover {
+                filter: opacity(5);
+            }
+         }
+    }
+
+}
