@@ -88,6 +88,9 @@
   justify-content: center;
   align-items: center;
 }
+.header .header__section .header__section__container .header__section__container__button:hover {
+  cursor: pointer;
+}
 .header .header__section .header__section__link {
   font-weight: 300;
   color: #fff;
@@ -276,21 +279,20 @@
 
 .rodape {
   background-color: #191919;
-  height: 370px;
+  height: 900px;
   font-family: Arial, Helvetica, sans-serif;
 }
 .rodape .rodape__section {
   display: flex;
   width: 75%;
   margin: 0 auto;
-  justify-content: space-evenly;
-  height: 300px;
+  height: 400px;
 }
 .rodape .rodape__section .rodape__section__container {
   margin-top: 30px;
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 70%;
 }
 .rodape .rodape__section .rodape__section__container .rodape__section__container__titulo {
   color: #fff;
@@ -300,7 +302,9 @@
 .rodape .rodape__section .rodape__section__container .rodape__section__container__link {
   text-decoration: none;
   color: #b7b7b7;
-  line-height: 25px;
+  line-height: 30px;
+  width: 170px;
+  font-size: 14px;
 }
 .rodape .rodape__section .rodape__section__container .rodape__section__container__link:hover {
   text-decoration: underline;
@@ -323,6 +327,58 @@
   filter: opacity(5);
 }
 .rodape .rodape__section2 {
+  display: flex;
+  width: 75%;
+  margin: 0 auto;
+  justify-content: space-evenly;
+  height: 450px;
+}
+.rodape .rodape__section2 .rodape__section2__divisao1 {
+  display: flex;
+  width: 50%;
+}
+.rodape .rodape__section2 .rodape__section2__container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+}
+.rodape .rodape__section2 .rodape__section2__container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.rodape .rodape__section2 .rodape__section2__container .rodape__section2__container__titulo {
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.rodape .rodape__section2 .rodape__section2__container .rodape__section2__container__link {
+  text-decoration: none;
+  color: #b7b7b7;
+  line-height: 30px;
+  font-size: 14px;
+}
+.rodape .rodape__section2 .rodape__section2__container .rodape__section2__container__link:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+.rodape .rodape__section2 .rodape__section2__container .rodape__section2__container__imgAPP {
+  margin-bottom: 20px;
+  width: 70%;
+  filter: opacity(0.7);
+}
+.rodape .rodape__section2 .rodape__section2__container .rodape__section2__container__imgGoogle {
+  width: 70%;
+  filter: opacity(0.7);
+}
+.rodape .rodape__section2 .rodape__section2__container .rodape__section2__container__imgAPP:hover {
+  filter: opacity(5);
+}
+.rodape .rodape__section2 .rodape__section2__container .rodape__section2__container__imgGoogle:hover {
+  filter: opacity(5);
+}
+.rodape .rodape__section3 {
   height: 50px;
   display: flex;
   justify-content: space-between;
@@ -330,33 +386,33 @@
   margin: 0 auto;
   align-items: center;
 }
-.rodape .rodape__section2 .rodape__section2__container {
+.rodape .rodape__section3 .rodape__section3__container {
   display: flex;
   align-items: center;
 }
-.rodape .rodape__section2 .rodape__section2__container .rodape__section2__container__img {
+.rodape .rodape__section3 .rodape__section3__container .rodape__section3__container__img {
   width: 35px;
   margin-right: 20px;
 }
-.rodape .rodape__section2 .rodape__section2__container .rodape__section2__container__link {
+.rodape .rodape__section3 .rodape__section3__container .rodape__section3__container__link {
   text-decoration: none;
   color: #ccc;
   font-size: 13px;
   margin-right: 20px;
 }
-.rodape .rodape__section2 .rodape__section2__container .rodape__section2__container__link:hover {
+.rodape .rodape__section3 .rodape__section3__container .rodape__section3__container__link:hover {
   text-decoration: underline;
   color: #fff;
 }
-.rodape .rodape__section2 .rodape__section2__container .rodape__section2__container__parag {
+.rodape .rodape__section3 .rodape__section3__container .rodape__section3__container__parag {
   color: #ccc;
   font-size: 13px;
   margin-right: 20px;
 }
-.rodape .rodape__section2 .rodape__section2__container .rodape__section2__container__img2 {
+.rodape .rodape__section3 .rodape__section3__container .rodape__section3__container__img2 {
   filter: opacity(0.7);
 }
-.rodape .rodape__section2 .rodape__section2__container .rodape__section2__container__img2:hover {
+.rodape .rodape__section3 .rodape__section3__container .rodape__section3__container__img2:hover {
   filter: opacity(5);
 }
 
